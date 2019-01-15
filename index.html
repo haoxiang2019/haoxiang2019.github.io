@@ -347,7 +347,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-15 12:24:55" itemprop="dateModified" datetime="2019-01-15T12:24:55+08:00">2019-01-15</time>
+                <time title="Modified: 2019-01-15 14:11:48" itemprop="dateModified" datetime="2019-01-15T14:11:48+08:00">2019-01-15</time>
               
             
           </span>
@@ -407,7 +407,8 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = <span class="number">0.2</span>, random_state = <span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="Step-6-特征缩放"><a href="#Step-6-特征缩放" class="headerlink" title="Step 6: 特征缩放"></a>Step 6: 特征缩放</h2><p>大部分机器学习算法在计算中使用两点间的欧几里得距离。不同特征在大小、单位和范围构成问题上变化很大，数值较大的特征在计算距离时权值也更大。这个问题可以用特征标准化或者Z-Score标准化解决。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"></span><br><span class="line">sc_X = StandardScaler()</span><br><span class="line">X_train = sc_X.fit_transform(X_train)</span><br><span class="line">X_test = sc_X.fit_transform(X_test)</span><br></pre></td></tr></table></figure>
-<h3 id="Done"><a href="#Done" class="headerlink" title="Done!"></a>Done!</h3>
+<p>Done!</p>
+
           
         
       
