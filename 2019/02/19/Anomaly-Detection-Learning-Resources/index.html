@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Anomaly Detection Learning Resources Outlier Detection (also known as Anomaly Detection ) is a fascinating and useful technique to identify outlying data objects. It has been proven critical in many f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Anomaly Detection Learning Resources">
+<meta property="og:url" content="http://smoba.cn/2019/02/19/Anomaly-Detection-Learning-Resources/index.html">
+<meta property="og:site_name" content="深藏功与名">
+<meta property="og:description" content="Anomaly Detection Learning Resources Outlier Detection (also known as Anomaly Detection ) is a fascinating and useful technique to identify outlying data objects. It has been proven critical in many f">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-02-19T04:44:05.176Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Anomaly Detection Learning Resources">
+<meta name="twitter:description" content="Anomaly Detection Learning Resources Outlier Detection (also known as Anomaly Detection ) is a fascinating and useful technique to identify outlying data objects. It has been proven critical in many f">
+
+
+
+
+
+
+  <link rel="canonical" href="http://smoba.cn/2019/02/19/Anomaly-Detection-Learning-Resources/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Anomaly Detection Learning Resources | 深藏功与名</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">深藏功与名</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://smoba.cn/2019/02/19/Anomaly-Detection-Learning-Resources/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Haoxiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="深藏功与名">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Anomaly Detection Learning Resources
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-19 12:06:14 / 修改时间：12:44:05" itemprop="dateCreated datePublished" datetime="2019-02-19T12:06:14+08:00">2019-02-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Anomaly-Detection-Learning-Resources"><a href="#Anomaly-Detection-Learning-Resources" class="headerlink" title="Anomaly Detection Learning Resources"></a>Anomaly Detection Learning Resources</h1><hr>
+<p><strong><em><a href="https://en.wikipedia.org/wiki/Anomaly_detection" target="_blank" rel="noopener">Outlier Detection</a></em></strong> (also known as <strong><em><a href="https://en.wikipedia.org/wiki/Anomaly_detection" target="_blank" rel="noopener">Anomaly Detection</a></em></strong> ) is a fascinating and useful technique to identify outlying data objects. It has been proven critical in many fields, such as credit card fraud analytics and mechanical unit defect detection.</p>
+<p>In this repository, you could find:</p>
+<ol>
+<li>Books &amp; Academic Papers </li>
+<li>Learning Materials, e.g., online courses and videos </li>
+<li>Outlier Datasets</li>
+<li>Open-source Libraries &amp; Demo Codes</li>
+<li><strong>Paper Downloader</strong>: a Python 3 script to download the open access papers listed in this repository (under development). </li>
+</ol>
+<p>[TOC]</p>
+<h2 id="1-Books-amp-Tutorials"><a href="#1-Books-amp-Tutorials" class="headerlink" title="1. Books &amp; Tutorials"></a>1. Books &amp; Tutorials</h2><h3 id="1-1-Books"><a href="#1-1-Books" class="headerlink" title="1.1. Books"></a>1.1. Books</h3><p><a href="https://www.springer.com/gp/book/9781461463955" target="_blank" rel="noopener">Outlier Analysis</a> by Charu Aggarwal: Classical text book covering most of the outlier analysis techniques.<br>A must-read for people in outlier detection. <a href="http://charuaggarwal.net/outlierbook.pdf" target="_blank" rel="noopener">[Preview.pdf]</a></p>
+<p><a href="https://www.springer.com/gp/book/9783319547640" target="_blank" rel="noopener">Outlier Ensembles: An Introduction</a> by Charu Aggarwal and Saket Sathe: Great intro book for ensemble learning in outlier analysis.</p>
+<p><a href="https://www.elsevier.com/books/data-mining-concepts-and-techniques/han/978-0-12-381479-1" target="_blank" rel="noopener">Data Mining: Concepts and Techniques (3rd)</a> by Jiawei Han Micheline Kamber Jian Pei: Chapter 12 discusses outlier detection with many important points. <a href="https://www.google.ca/search?&amp;q=data+mining+jiawei+han&amp;oq=data+ming+jiawei" target="_blank" rel="noopener">[Google Search]</a></p>
+<h3 id="1-2-Tutorials"><a href="#1-2-Tutorials" class="headerlink" title="1.2. Tutorials"></a>1.2. Tutorials</h3><p>Kriegel, H.P., Kröger, P. and Zimek, A., 2010. Outlier detection techniques. <em>Tutorial at ACM SIGKDD</em>, 10. <a href="https://imada.sdu.dk/~zimek/publications/KDD2010/kdd10-outlier-tutorial.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Chawla, S. and Chandola, V., 2011, Anomaly Detection: A Tutorial. <em>Tutorial at ICDM 2011</em>.  <a href="http://webdocs.cs.ualberta.ca/~icdm2011/downloads/ICDM2011_anomaly_detection_tutorial.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Lazarevic, A., Banerjee, A., Chandola, V., Kumar, V. and Srivastava, J., 2008, September. Data mining for anomaly detection. In <em>Tutorial at ECML PKDD 2008</em>. <a href="http://videolectures.net/ecmlpkdd08_lazarevic_dmfa/" target="_blank" rel="noopener">[See Video]</a></p>
+<h2 id="2-Courses-Seminars-Videos"><a href="#2-Courses-Seminars-Videos" class="headerlink" title="2. Courses/Seminars/Videos"></a>2. Courses/Seminars/Videos</h2><p><strong>Coursera Introduction to Anomaly Detection (by IBM)</strong>:<br><a href="https://www.coursera.org/learn/ai/lecture/ASPv0/introduction-to-anomaly-detection" target="_blank" rel="noopener">https://www.coursera.org/learn/ai/lecture/ASPv0/introduction-to-anomaly-detection</a></p>
+<p><strong>Coursera Machine Learning by Andrew Ng also partly covers the topic</strong>:</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/machine-learning/lecture/Rkc5x/anomaly-detection-vs-supervised-learning" target="_blank" rel="noopener">Anomaly Detection vs. Supervised Learning</a></li>
+<li><a href="https://www.coursera.org/learn/machine-learning/lecture/Mwrni/developing-and-evaluating-an-anomaly-detection-system" target="_blank" rel="noopener">Developing and Evaluating an Anomaly Detection System</a></li>
+</ul>
+<p><strong>Udemy Outlier Detection Algorithms in Data Mining and Data Science</strong>: <a href="https://www.udemy.com/outlier-detection-techniques/" target="_blank" rel="noopener">https://www.udemy.com/outlier-detection-techniques/</a></p>
+<p><strong>Stanford Data Mining for Cyber Security</strong> also covers part of anomaly detection techniques. <a href="http://web.stanford.edu/class/cs259d/" target="_blank" rel="noopener">http://web.stanford.edu/class/cs259d/</a></p>
+<h2 id="3-Toolbox-amp-Datasets"><a href="#3-Toolbox-amp-Datasets" class="headerlink" title="3. Toolbox &amp; Datasets"></a>3. Toolbox &amp; Datasets</h2><h3 id="3-1-Python"><a href="#3-1-Python" class="headerlink" title="3.1. Python"></a>3.1. Python</h3><p><a href="http://scikit-learn.org/stable/modules/outlier_detection.html" target="_blank" rel="noopener">Scikit-learn Novelty and Outlier Detection</a>. It supports some popular algorithms like LOF, Isolation Forest and One-class SVM</p>
+<p><a href="https://github.com/yzhao062/Pyod" target="_blank" rel="noopener">Python Outlier Detection (PyOD)</a>: It supports a series of outlier detection algorithms and combination frameworks. It is now released on PyPI and can be installed with “pip install pyod”.</p>
+<h3 id="3-2-Matlab"><a href="#3-2-Matlab" class="headerlink" title="3.2. Matlab"></a>3.2. Matlab</h3><p><a href="http://dsmi-lab-ntust.github.io/AnomalyDetectionToolbox/" target="_blank" rel="noopener">Anomaly Detection Toolbox - Beta</a>: A collection of popular outlier detection algorithms in Matlab.</p>
+<h3 id="3-3-Java"><a href="#3-3-Java" class="headerlink" title="3.3. Java"></a>3.3. Java</h3><p><a href="https://elki-project.github.io/" target="_blank" rel="noopener">ELKI: Environment for Developing KDD-Applications Supported by Index-Structures</a>:<br>ELKI is an open source (AGPLv3) data mining software written in Java. The focus of ELKI is research in algorithms, with an emphasis on unsupervised methods in cluster analysis and outlier detection. </p>
+<p><a href="https://github.com/Markus-Go/rapidminer-anomalydetection" target="_blank" rel="noopener">RapidMiner Anomaly Detection Extension</a>: The Anomaly Detection Extension for RapidMiner comprises the most well know unsupervised anomaly detection algorithms, assigning individual anomaly scores to data rows of example sets. It allows you to find data, which is significantly different from the normal, without the need for the data being labeled.</p>
+<h3 id="3-4-Time-series-outlier-detection"><a href="#3-4-Time-series-outlier-detection" class="headerlink" title="3.4. Time series outlier detection"></a>3.4. Time series outlier detection</h3><ul>
+<li><a href="https://github.com/MentatInnovations/datastream.io" target="_blank" rel="noopener">datastream.io</a></li>
+<li><a href="https://github.com/earthgecko/skyline" target="_blank" rel="noopener">skyline</a></li>
+<li><a href="https://github.com/tsurubee/banpei" target="_blank" rel="noopener">banpei</a></li>
+<li><a href="https://github.com/twitter/AnomalyDetection" target="_blank" rel="noopener">AnomalyDetection</a></li>
+</ul>
+<h3 id="3-5-Datasets"><a href="#3-5-Datasets" class="headerlink" title="3.5. Datasets"></a>3.5. Datasets</h3><p><strong>ELKI Outlier Datasets</strong>: <a href="https://elki-project.github.io/datasets/outlier" target="_blank" rel="noopener">https://elki-project.github.io/datasets/outlier</a></p>
+<p><strong>Outlier Detection DataSets (ODDS)</strong>: <a href="http://odds.cs.stonybrook.edu/#table1" target="_blank" rel="noopener">http://odds.cs.stonybrook.edu/#table1</a></p>
+<p><strong>Unsupervised Anomaly Detection Dataverse</strong>: <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OPQMVF" target="_blank" rel="noopener">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OPQMVF</a></p>
+<p><strong>Anomaly Detection Meta-Analysis Benchmarks</strong>: <a href="https://ir.library.oregonstate.edu/concern/datasets/47429f155" target="_blank" rel="noopener">https://ir.library.oregonstate.edu/concern/datasets/47429f155</a></p>
+<h2 id="4-Papers"><a href="#4-Papers" class="headerlink" title="4. Papers"></a>4. Papers</h2><h3 id="4-1-Overview-amp-Survey-Papers"><a href="#4-1-Overview-amp-Survey-Papers" class="headerlink" title="4.1. Overview &amp; Survey Papers"></a>4.1. Overview &amp; Survey Papers</h3><p>Chandola, V., Banerjee, A. and Kumar, V., 2009. Anomaly detection: A survey. <em>ACM computing surveys</em> , 41(3), p.15. <a href="https://www.vs.inf.ethz.ch/edu/HS2011/CPS/papers/chandola09_anomaly-detection-survey.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Hodge, V. and Austin, J., 2004. A survey of outlier detection methodologies. <em>Artificial intelligence review</em>, 22(2), pp.85-126. <a href="https://www-users.cs.york.ac.uk/vicky/myPapers/Hodge+Austin_OutlierDetection_AIRE381.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Campos, G.O., Zimek, A., Sander, J., Campello, R.J., Micenková, B., Schubert, E., Assent, I. and Houle, M.E., 2016. On the evaluation of unsupervised outlier detection: measures, datasets, and an empirical study. <em>Data Mining and Knowledge Discovery</em>, 30(4), pp.891-927. <a href="https://link.springer.com/article/10.1007/s10618-015-0444-8" target="_blank" rel="noopener">[HTML]</a><br><a href="https://imada.sdu.dk/~zimek/InvitedTalks/TUVienna-2016-05-18-outlier-evaluation.pdf" target="_blank" rel="noopener">[SLIDES]</a></p>
+<p>Singh, K., &amp; Upadhyaya, S. (2012). Outlier detection: applications and techniques. International Journal of Computer Science Issues (IJCSI), 9(1), 307. <a href="https://pdfs.semanticscholar.org/4f58/44c9e7db68af7c2c5b918082636c3307cef9.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Goldstein, M. and Uchida, S., 2016. A comparative evaluation of unsupervised anomaly detection algorithms for multivariate data. <em>PloS one</em>, 11(4), p.e0152173.  <a href="http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0152173&amp;type=printable" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-2-Key-Algorithms"><a href="#4-2-Key-Algorithms" class="headerlink" title="4.2. Key Algorithms"></a>4.2. Key Algorithms</h3><p><strong>k Nearst Neighbors (kNN) Outlier Detector</strong>.</p>
+<ul>
+<li>Ramaswamy, S., Rastogi, R. and Shim, K., 2000, May. Efficient algorithms for mining outliers from large data sets. <em>ACM Sigmod Record</em>, 29(2), pp. 427-438). <a href="https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf" target="_blank" rel="noopener">[Download PDF]</a></li>
+<li>Angiulli, F. and Pizzuti, C., 2002, August. Fast outlier detection in high dimensional spaces. In <em>European Conference on Principles of Data Mining and Knowledge Discovery</em> pp. 15-27. <a href="https://link.springer.com/chapter/10.1007/3-540-45681-3_2" target="_blank" rel="noopener">[HTML]</a></li>
+</ul>
+<p><strong>Local Outlier Factor (LOF)</strong>. Breunig, M.M., Kriegel, H.P., Ng, R.T. and Sander, J., 2000, May. LOF: identifying density-based local outliers. <em>ACM Sigmod Record</em>, 29(2), pp. 93-104. <a href="http://www.dbs.ifi.lmu.de/Publikationen/Papers/LOF.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p><strong>Isolation Forest</strong>. Liu, F.T., Ting, K.M. and Zhou, Z.H., 2008, December. Isolation forest. In <em>ICDM ‘08</em>, pp. 413-422. IEEE. <a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p><strong>One-class Support Vector Machine</strong>. Ma, J. and Perkins, S., 2003, July. Time-series novelty detection using one-class support vector machines. In <em>IJCNN’ 03</em>, pp. 1741-1745. IEEE. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.653.2440&amp;rep=rep1&amp;type=pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-3-Graph-amp-Network-Outlier-Detection"><a href="#4-3-Graph-amp-Network-Outlier-Detection" class="headerlink" title="4.3. Graph &amp; Network Outlier Detection"></a>4.3. Graph &amp; Network Outlier Detection</h3><p>Akoglu, L., Tong, H. and Koutra, D., 2015. Graph based anomaly detection and description: a survey. <em>Data Mining and Knowledge Discovery</em>, 29(3), pp.626-688. <a href="https://arxiv.org/pdf/1404.4679.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Ranshous, S., Shen, S., Koutra, D., Harenberg, S., Faloutsos, C. and Samatova, N.F., 2015. Anomaly detection in dynamic networks: a survey. Wiley Interdisciplinary Reviews: Computational Statistics, 7(3), pp.223-247. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/wics.1347" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-4-Time-Series-Outlier-Detection"><a href="#4-4-Time-Series-Outlier-Detection" class="headerlink" title="4.4. Time Series Outlier Detection"></a>4.4. Time Series Outlier Detection</h3><p>Gupta, M., Gao, J., Aggarwal, C.C. and Han, J., 2014. Outlier detection for temporal data: A survey. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 26(9), pp.2250-2267. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2014/01/gupta14_tkde.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-5-Feature-Selection-in-Outlier-Detection"><a href="#4-5-Feature-Selection-in-Outlier-Detection" class="headerlink" title="4.5. Feature Selection in Outlier Detection"></a>4.5. Feature Selection in Outlier Detection</h3><p>Pang, G., Cao, L., Chen, L. and Liu, H., 2016, December. Unsupervised feature selection for outlier detection by modelling hierarchical value-feature couplings. In Data Mining (ICDM), 2016 IEEE 16th International Conference on (pp. 410-419). IEEE. <a href="https://opus.lib.uts.edu.au/bitstream/10453/107356/4/DSFS_ICDM2016.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Pang, G., Cao, L., Chen, L. and Liu, H., 2017, August. Learning homophily couplings from non-iid data for joint feature selection and noise-resilient outlier detection. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (pp. 2585-2591). AAAI Press. <a href="https://www.ijcai.org/proceedings/2017/0360.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-6-High-dimensional-amp-Subspace-Outliers"><a href="#4-6-High-dimensional-amp-Subspace-Outliers" class="headerlink" title="4.6. High-dimensional &amp; Subspace Outliers"></a>4.6. High-dimensional &amp; Subspace Outliers</h3><p>Zimek, A., Schubert, E. and Kriegel, H.P., 2012. A survey on unsupervised outlier detection in high‐dimensional numerical data. <em>Statistical Analysis and Data Mining: The ASA Data Science Journal</em>, 5(5), pp.363-387. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sam.11161" target="_blank" rel="noopener">[Downloadable Link]</a></p>
+<p>Pang, G., Cao, L., Chen, L. and Liu, H., 2018. Learning Representations of Ultrahigh-dimensional Data for Random Distance-based Outlier Detection. In <em>24th ACM SIGKDD International Conference on Knowledge Discovery and Data mining (KDD)</em>. 2018. <a href="https://arxiv.org/pdf/1806.04808.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-7-Outlier-Ensembles"><a href="#4-7-Outlier-Ensembles" class="headerlink" title="4.7. Outlier Ensembles"></a>4.7. Outlier Ensembles</h3><p>Aggarwal, C.C., 2013. Outlier ensembles: position paper. <em>ACM SIGKDD Explorations Newsletter</em>, 14(2), pp.49-58. <a href="https://pdfs.semanticscholar.org/841e/ce7c3812bbf799c99c84c064bbcf77916ba9.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Zimek, A., Campello, R.J. and Sander, J., 2014. Ensembles for unsupervised outlier detection: challenges and research questions a position paper. <em>ACM Sigkdd Explorations Newsletter</em>, 15(1), pp.11-22. <a href="http://www.kdd.org/exploration_files/V15-01-02-Zimek.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Campos, G.O., Zimek, A. and Meira, W., 2018, June. An Unsupervised Boosting Strategy for Outlier Detection Ensembles. In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 564-576). Springer, Cham. <a href="https://link.springer.com/chapter/10.1007/978-3-319-93034-3_45" target="_blank" rel="noopener">[HTML]</a></p>
+<h3 id="4-8-Outlier-Detection-in-Evolving-Data"><a href="#4-8-Outlier-Detection-in-Evolving-Data" class="headerlink" title="4.8. Outlier Detection in Evolving Data"></a>4.8. Outlier Detection in Evolving Data</h3><p>Salehi, Mahsa &amp; Rashidi, Lida. (2018). A Survey on Anomaly detection in Evolving Data: [with Application to Forest Fire Risk Prediction]. <em>ACM SIGKDD Explorations Newsletter</em>. 20. 13-23. <a href="http://www.kdd.org/exploration_files/20-1-Article2.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Emaad Manzoor, Hemank Lamba, Leman Akoglu. Outlier Detection in Feature-Evolving Data Streams. In <em>24th ACM SIGKDD International Conference on Knowledge Discovery and Data mining (KDD)</em>. 2018. <a href="https://www.andrew.cmu.edu/user/lakoglu/pubs/18-kdd-xstream.pdf" target="_blank" rel="noopener">[Download PDF]</a><br><a href="https://cmuxstream.github.io/" target="_blank" rel="noopener">[Github]</a></p>
+<h3 id="4-9-Representation-Learning-in-Outlier-Detection"><a href="#4-9-Representation-Learning-in-Outlier-Detection" class="headerlink" title="4.9. Representation Learning in Outlier Detection"></a>4.9. Representation Learning in Outlier Detection</h3><p>Pang, G., Cao, L., Chen, L. and Liu, H., 2018. Learning Representations of Ultrahigh-dimensional Data for Random Distance-based Outlier Detection. In <em>24th ACM SIGKDD International Conference on Knowledge Discovery and Data mining (KDD)</em>. 2018. <a href="https://arxiv.org/pdf/1806.04808.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Micenková, B., McWilliams, B. and Assent, I., 2015. Learning representations for outlier detection on a budget. arXiv preprint arXiv:1507.08104. <a href="https://arxiv.org/pdf/1507.08104.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Zhao, Y., Hryniewicki, M.K. and PricewaterhouseCoopers, A., 2018. XGBOD: Improving Supervised Outlier Detection with Unsupervised Representation Learning. <em>International Joint Conference on Neural Networks</em>. <a href="https://www.cs.toronto.edu/~yuezhao/s/edited_XGBOD.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-10-Interpretability"><a href="#4-10-Interpretability" class="headerlink" title="4.10. Interpretability"></a>4.10. Interpretability</h3><p>Nikhil Gupta, Dhivya Eswaran, Neil Shah, Leman Akoglu, Christos Faloutsos. Beyond Outlier Detection: LookOut for Pictorial Explanation. <em>ECML PKDD 2018</em>. <a href="https://www.andrew.cmu.edu/user/lakoglu/pubs/18-pkdd-lookout.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Liu, N., Shin, D. and Hu, X., 2017. Contextual outlier interpretation. arXiv preprint arXiv:1711.10589. <a href="https://arxiv.org/pdf/1711.10589.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Tang, G., Pei, J., Bailey, J. and Dong, G., 2015. Mining multidimensional contextual outliers from categorical relational data. Intelligent Data Analysis, 19(5), pp.1171-1192.  <a href="http://www.cs.sfu.ca/~jpei/publications/Contextual%20outliers.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Dang, X.H., Assent, I., Ng, R.T., Zimek, A. and Schubert, E., 2014, March. Discriminative features for identifying and interpreting outliers. In <em>International Conference on Data Engineering (ICDE)</em>. IEEE. <a href="http://cs.au.dk/~dang/icde2014.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-11-Social-Media-Anomaly-Detection"><a href="#4-11-Social-Media-Anomaly-Detection" class="headerlink" title="4.11. Social Media Anomaly Detection"></a>4.11. Social Media Anomaly Detection</h3><p>Yu, R., Qiu, H., Wen, Z., Lin, C. and Liu, Y., 2016. A survey on social media anomaly detection. <em>ACM SIGKDD Explorations Newsletter</em>, 18(1), pp.1-14. <a href="https://arxiv.org/pdf/1601.01102.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<p>Yu, R., He, X. and Liu, Y., 2015. Glad: group anomaly detection in social media analysis. <em>ACM Transactions on Knowledge Discovery from Data (TKDD)</em>, 10(2), p.18. <a href="https://arxiv.org/pdf/1410.1940.pdf" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-12-Outlier-Detection-in-Other-fields"><a href="#4-12-Outlier-Detection-in-Other-fields" class="headerlink" title="4.12. Outlier Detection in Other fields"></a>4.12. Outlier Detection in Other fields</h3><p>Kannan, R., Woo, H., Aggarwal, C.C. and Park, H., 2017, June. Outlier detection for text data. In Proceedings of the 2017 SIAM International Conference on Data Mining (pp. 489-497). Society for Industrial and Applied Mathematics. <a href="https://epubs.siam.org/doi/pdf/10.1137/1.9781611974973.55" target="_blank" rel="noopener">[Download PDF]</a></p>
+<h3 id="4-13-Outlier-Detection-Applications"><a href="#4-13-Outlier-Detection-Applications" class="headerlink" title="4.13. Outlier Detection Applications"></a>4.13. Outlier Detection Applications</h3><p><strong>Security</strong>:</p>
+<ul>
+<li>Weller-Fahy, D.J., Borghetti, B.J. and Sodemann, A.A., 2015. A survey of distance and similarity measures used within network intrusion anomaly detection. <em>IEEE Communications Surveys &amp; Tutorials</em>, 17(1), pp.70-91. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6853338" target="_blank" rel="noopener">[Download PDF]</a></li>
+<li>Garcia-Teodoro, P., Diaz-Verdejo, J., Maciá-Fernández, G. and Vázquez, E., 2009. Anomaly-based network intrusion detection: Techniques, systems and challenges. <em>computers &amp; security</em>, 28(1-2), pp.18-28. <a href="http://dtstc.ugr.es/~jedv/descargas/2009_CoSe09-Anomaly-based-network-intrusion-detection-Techniques,-systems-and-challenges.pdf" target="_blank" rel="noopener">[Download PDF]</a></li>
+</ul>
+<p><strong>Finance</strong>:</p>
+<ul>
+<li>Ahmed, M., Mahmood, A.N. and Islam, M.R., 2016. A survey of anomaly detection techniques in financial domain. Future Generation Computer Systems, 55, pp.278-288. <a href="http://isiarticles.com/bundles/Article/pre/pdf/76882.pdf" target="_blank" rel="noopener">[Download PDF]</a></li>
+</ul>
+<h2 id="5-Key-Conferences-Workshops-Journals"><a href="#5-Key-Conferences-Workshops-Journals" class="headerlink" title="5. Key Conferences/Workshops/Journals"></a>5. Key Conferences/Workshops/Journals</h2><h3 id="5-1-Conferences-amp-Workshops"><a href="#5-1-Conferences-amp-Workshops" class="headerlink" title="5.1. Conferences &amp; Workshops"></a>5.1. Conferences &amp; Workshops</h3><p><a href="http://www.kdd.org/conferences" target="_blank" rel="noopener">ACM International Conference on Knowledge Discovery and Data Mining (SIGKDD)</a><br> <strong>Note: SIGKDD usually has an Outlier Detection Workshop (ODD), see <a href="https://www.andrew.cmu.edu/user/lakoglu/odd/index.html" target="_blank" rel="noopener">ODD 2018</a></strong>.</p>
+<p><a href="https://sigmod.org/" target="_blank" rel="noopener">ACM International Conference on Management of Data (SIGMOD)</a></p>
+<p><a href="https://www2018.thewebconf.org/" target="_blank" rel="noopener">The Web Conference (WWW)</a></p>
+<p><a href="http://icdm2018.org/" target="_blank" rel="noopener">IEEE International Conference on Data Mining (ICDM)</a></p>
+<p><a href="https://www.siam.org/Conferences/CM/Main/sdm19" target="_blank" rel="noopener">SIAM International Conference on Data Mining (SDM)</a></p>
+<p><a href="https://icde2018.org/" target="_blank" rel="noopener">IEEE International Conference on Data Engineering (ICDE)</a></p>
+<p><a href="http://www.cikmconference.org/" target="_blank" rel="noopener">ACM InternationalConference on Information and Knowledge Management (CIKM)</a></p>
+<p><a href="http://www.wsdm-conference.org/2018/" target="_blank" rel="noopener">ACM International Conference on Web Search and Data Mining (WSDM)</a></p>
+<p><a href="http://www.ecmlpkdd2018.org/" target="_blank" rel="noopener">The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)</a></p>
+<p><a href="http://pakdd2019.medmeeting.org" target="_blank" rel="noopener">The Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)</a></p>
+<h3 id="5-2-Journals"><a href="#5-2-Journals" class="headerlink" title="5.2. Journals"></a>5.2. Journals</h3><p><a href="https://tkdd.acm.org/" target="_blank" rel="noopener">ACM Transactions on Knowledge Discovery from Data (TKDD)</a></p>
+<p><a href="https://www.computer.org/web/tkde" target="_blank" rel="noopener">IEEE Transactions on Knowledge and Data Engineering (TKDE)</a></p>
+<p><a href="http://www.kdd.org/explorations" target="_blank" rel="noopener">ACM SIGKDD Explorations Newsletter</a></p>
+<p><a href="https://link.springer.com/journal/10618" target="_blank" rel="noopener">Data Mining and Knowledge Discovery</a></p>
+<p><a href="https://link.springer.com/journal/10115" target="_blank" rel="noopener">Knowledge and Information Systems (KAIS)</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/28/Day-11-K-Nearest-Neighbors/" rel="next" title="Day 011 | K-近邻算法">
+                <i class="fa fa-chevron-left"></i> Day 011 | K-近邻算法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Haoxiang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/haoxiang2019" title="GitHub &rarr; https://github.com/haoxiang2019" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:haoxiang@tencent.com" title="E-Mail &rarr; mailto:haoxiang@tencent.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Anomaly-Detection-Learning-Resources"><span class="nav-number">1.</span> <span class="nav-text">Anomaly Detection Learning Resources</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Books-amp-Tutorials"><span class="nav-number">1.1.</span> <span class="nav-text">1. Books &amp; Tutorials</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Books"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1. Books</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Tutorials"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2. Tutorials</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Courses-Seminars-Videos"><span class="nav-number">1.2.</span> <span class="nav-text">2. Courses/Seminars/Videos</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Toolbox-amp-Datasets"><span class="nav-number">1.3.</span> <span class="nav-text">3. Toolbox &amp; Datasets</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Python"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1. Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Matlab"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2. Matlab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-Java"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3. Java</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-Time-series-outlier-detection"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4. Time series outlier detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-Datasets"><span class="nav-number">1.3.5.</span> <span class="nav-text">3.5. Datasets</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Papers"><span class="nav-number">1.4.</span> <span class="nav-text">4. Papers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-Overview-amp-Survey-Papers"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1. Overview &amp; Survey Papers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-Key-Algorithms"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.2. Key Algorithms</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-Graph-amp-Network-Outlier-Detection"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.3. Graph &amp; Network Outlier Detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-Time-Series-Outlier-Detection"><span class="nav-number">1.4.4.</span> <span class="nav-text">4.4. Time Series Outlier Detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-Feature-Selection-in-Outlier-Detection"><span class="nav-number">1.4.5.</span> <span class="nav-text">4.5. Feature Selection in Outlier Detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-High-dimensional-amp-Subspace-Outliers"><span class="nav-number">1.4.6.</span> <span class="nav-text">4.6. High-dimensional &amp; Subspace Outliers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-7-Outlier-Ensembles"><span class="nav-number">1.4.7.</span> <span class="nav-text">4.7. Outlier Ensembles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-8-Outlier-Detection-in-Evolving-Data"><span class="nav-number">1.4.8.</span> <span class="nav-text">4.8. Outlier Detection in Evolving Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-9-Representation-Learning-in-Outlier-Detection"><span class="nav-number">1.4.9.</span> <span class="nav-text">4.9. Representation Learning in Outlier Detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-10-Interpretability"><span class="nav-number">1.4.10.</span> <span class="nav-text">4.10. Interpretability</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-11-Social-Media-Anomaly-Detection"><span class="nav-number">1.4.11.</span> <span class="nav-text">4.11. Social Media Anomaly Detection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-12-Outlier-Detection-in-Other-fields"><span class="nav-number">1.4.12.</span> <span class="nav-text">4.12. Outlier Detection in Other fields</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-13-Outlier-Detection-Applications"><span class="nav-number">1.4.13.</span> <span class="nav-text">4.13. Outlier Detection Applications</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Key-Conferences-Workshops-Journals"><span class="nav-number">1.5.</span> <span class="nav-text">5. Key Conferences/Workshops/Journals</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-Conferences-amp-Workshops"><span class="nav-number">1.5.1.</span> <span class="nav-text">5.1. Conferences &amp; Workshops</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-Journals"><span class="nav-number">1.5.2.</span> <span class="nav-text">5.2. Journals</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Haoxiang</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
